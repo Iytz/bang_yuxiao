@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bang.project.bang.MeActivity">
+
+    <include layout="@layout/share_bottom_button" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:id="@+id/ll_me_user"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingTop="35dp"
+            android:paddingBottom="20dp"
+            android:weightSum="1"
+            android:background="#c2e2d9">
+            <!--用户头像,src放默认的头像，登陆成功后替换-->
+            <ImageView
+                android:id="@+id/iv_me_user_img"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:clickable="true"
+                android:src="@android:drawable/ic_menu_agenda"
+                android:background="#bc7777" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_me_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/default_user_name"/>
+                <TextView
+                    android:id="@+id/tv_me_user_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="5dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/bt_user_simpleInfo"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_me_user_msg"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/ll_user"
+            android:orientation="vertical"
+            android:paddingBottom="15dp">
+            <Button
+                android:id="@+id/bt_me_myMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="20dp"
+                android:drawableLeft="@drawable/ic_menu_camera"
+                android:text="@string/bt_me_myMessage"
+                android:background="#b1ece1" />
+            <Button
+                android:id="@+id/bt_me_send"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="20dp"
+                android:drawableLeft="@drawable/ic_menu_send"
+                android:text="@string/bt_me_send"
+                android:background="#bed5cc" />
+            <Button
+                android:id="@+id/bt_me_saved"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="20dp"
+                android:drawableLeft="@drawable/ic_menu_gallery"
+                android:text="@string/bt_me_saved"
+                android:allowUndo="false"
+                android:background="#a6d9cb" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_me_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_user"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="20dp"
+            android:drawableLeft="@drawable/ic_menu_manage"
+            android:text="@string/setting"/>
+
+    </LinearLayout>
+</RelativeLayout>

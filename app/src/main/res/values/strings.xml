@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">bang</string>
+    <string name="bt_main_return">返回</string>
+    <string name="bt_main_resources">资源圈</string>
+    <string name="bt_main_me">我</string>
+    <string name="bt_main_schoolmates">校友圈</string>
+    <string name="bt_main_message">私信</string>
+
+    <!-- activity_resources.xml-->
+    <string name="hint_resources_search">请输入资源名称或相关关键词</string>
+
+    <!-- activity_me.xml-->
+    <string name="default_user_name">未登录</string>
+    <string name="bt_user_simpleInfo">用户简介</string>
+    <string name="setting">设置</string>
+    <string name="bt_me_myMessage">我的信息</string>
+    <string name="bt_me_send">我发布的</string>
+    <string name="bt_me_saved">收藏夹</string>
+</resources>
