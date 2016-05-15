@@ -18,7 +18,11 @@
         <activity android:name=".MeActivity" />
         <activity android:name=".ResourcesActivity" />
         <activity android:name=".SchoolmatesActivity" />
-        <activity android:name=".MessageActivity"></activity>
+        <activity android:name=".MessageActivity"></activity><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
     </application>
 
 </manifest>
